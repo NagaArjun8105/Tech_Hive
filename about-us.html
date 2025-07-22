@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tech-Hive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px; /* Ensures content is not hidden under fixed navbar */
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background-color: #003366; /* Darker than header */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Visual separation */
+        }
+
+        header {
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        h1, h2, h4 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="about-us.html">TECH-HIVE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cousre.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="user.php">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>About Tech-Hive</h1>
+        <p>Empowering collaborative learning through technology</p>
+    </header>
+
+    <!-- About Us Content -->
+    <section class="container my-5">
+        <div class="row">
+            <h2 class="section-title">Who We Are</h2>
+            <p>Tech-Hive is a cooperative e-learning platform dedicated to providing high-quality educational content.
+                We bring together learners, educators, and industry experts to create a dynamic learning environment.</p>
+        </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="bg-light py-5 text-center">
+        <h2 class="section-title">Our Mission</h2>
+        <p>To make education accessible, collaborative, and engaging for everyone through technology-driven solutions.</p>
+    </section>
+
+    <!-- Our Core Values -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Our Core Values</h2>
+        <div class="row text-center">
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h4>Collaboration</h4>
+                <p>We believe in learning together and growing as a community.</p>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h4>Innovation</h4>
+                <p>We leverage technology to make education more effective.</p>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h4>Excellence</h4>
+                <p>We strive to provide the best learning experience for our users.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center py-5 bg-primary text-white">
+        <h2>Join Tech-Hive Today!</h2>
+        <p>Be a part of our growing learning community.</p>
+        <a href="index.php" class="btn btn-light">Get Started</a>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

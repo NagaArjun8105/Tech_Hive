@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | E-Learning Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .course-card {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .course-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+        }
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="about-us.html">TECH-HIVE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cousre.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="user.php">Profile</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <br><br>
+    <!-- Hero Section -->
+    <div class="container text-center mt-4">
+        <h2>Explore Our Courses</h2>
+        <p class="lead">Find the best courses to enhance your skills.</p>
+      
+    </div>
+
+    <!-- Courses Section -->
+    <div class="container mt-5">
+        <div class="row g-4"> <!-- Added g-4 for proper spacing -->
+
+            <!-- Course 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 course-card shadow-lg">
+                    <img src="img/python.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Visualization </h5>
+                        <p class="card-text">Learn To Visualize Data With Power BI.</p>
+                        <a href="data_visualization.php" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 course-card shadow-lg">
+                    <img src="img/full stack.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Stack Web Development</h5>
+                        <p class="card-text">HTML, CSS, JavaScript, Node.js, React.</p>
+                        <a href="e-learningpages.php" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 course-card shadow-lg">
+                    <img src="img/aws.webp" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">AWS Cloud Fundamentals</h5>
+                        <p class="card-text">Learn AWS services and cloud concepts.</p>
+                        <a href=" cloudcomputingelement.php" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 course-card shadow-lg">
+                    <img src="img/machine.webp" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning Basics</h5>
+                        <p class="card-text">Introduction to ML, algorithms, and AI models.</p>
+                        <a href="ml.php" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 course-card shadow-lg">
+                    <img src="img/cyber.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Cyber Security Essentials</h5>
+                        <p class="card-text">Learn ethical hacking and security best practices.</p>
+                        <a href="cyber security.php" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 course-card shadow-lg">
+                    <img src="img/ds.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">AI in Data Science</h5>
+                        <p class="card-text">Analyze data and build models with Python.</p>
+                        <a href="AI in DS.php" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of Row -->
+    </div> <!-- End of Container -->
+    <!-- Footer -->
+<footer class="bg-primary text-white text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row">
+            <!-- About -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">TECH-HIVE</h5>
+                <p>
+                    Empowering learners through quality online education in web development, cloud computing, machine learning, and more.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.php" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="cousre.html" class="text-white text-decoration-none">Courses</a></li>
+                    <li><a href="about-us.html" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Contact Us</h5>
+                <p>Email: support@tech-hive.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <div>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-dark">
+        © 2025 TECH-HIVE. All Rights Reserved.
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

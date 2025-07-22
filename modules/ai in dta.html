@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Module</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="web1.css">
+    <style>
+        .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+.carousel-inner img {
+    width: 100%;
+    height: 600px; /* Adjust as needed */
+    object-fit: cover;
+}
+.carousel-inner img {
+    max-height: 70vh; /* 70% of viewport height */
+    width: auto;
+    object-fit: contain;
+}
+
+
+    </style>
+</head>
+<body>
+
+<div class="d-flex">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h5> AI In Datascience</h5>
+        <a id="topic1" class="active">Topic 1</a>
+        <a id="topic2">Topic 2</a>
+        <a id="topic3">Topic 3</a>
+        <a id="topic4">Topic 4</a>
+        <a href="#">Knowledge Test</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content flex-grow-1">
+        <div id="topic1Content">
+        <div id="container">
+        <!-- Video Section -->
+        <div id="videoSection" class="video-container">
+            <video src="image/aivid.mp4" controls="" width: "100%" height: "300px" poster="image/poster1 (6).jpeg"></video>
+            
+        </div>
+        <div class="intro">
+        <h2>Introduction to AI in Data Science 🌟
+        </h2><br>
+        <h4>What is AI in Data Science?
+        </h4>
+        <p>AI (Artificial Intelligence) in Data Science refers to the use of intelligent algorithms and models to analyze, interpret, and make decisions from data automatically. It enhances traditional data science methods by introducing learning, prediction, and automation capabilities.
+</p>
+        <br><h4>🔍 Types of AI Techniques in Data Science
+        </h4>
+        <ul>
+            <b>1.</b>  Machine Learning
+
+               <li>  Supervised Learning – Learns from labeled data to make predictions (e.g., classification, regression).
+
+               </li>
+                
+            
+                <li> Unsupervised Learning – Finds hidden patterns in unlabeled data (e.g., clustering, dimensionality reduction).
+
+                </li>
+                
+                <li> Reinforcement Learning – Learns through trial and error by receiving rewards or penalties.
+
+                </li>
+                
+                <b>2.</b> Deep Learning
+
+                    <li>Neural Networks – Models that mimic the human brain to recognize patterns and relationships.
+
+                    </li>
+                    
+                    <li>Convolutional Neural Networks (CNNs) – Best for image and video data processing.
+
+                    </li>
+                    
+                   <li>Recurrent Neural Networks (RNNs) – Specialized for sequential data like time series and text.
+
+                   </li>
+        </li>
+              <b>3.Natural Language Processing (NLP)
+            </b>
+    <li> Text Analysis – Sentiment analysis, topic modeling, summarization.
+
+    </li>
+    
+   <li>Chatbots – Virtual assistants powered by AI understanding language.
+
+   </li>
+    
+        </ul><br>
+        <h4>🌍 The Evolution of AI in Data Science
+        </h4>
+        <ul>
+            <li>1950s–1970s: Birth of AI Concepts
+
+                AI theories like symbolic reasoning and early machine learning algorithms are developed. Computers begin solving basic tasks.
+
+
+            </li>
+             <li>1980s–1990s: Machine Learning Emerges
+
+                
+                Introduction of decision trees, neural networks, and early statistical learning methods. Data becomes a valuable resource.
+
+
+                
+                </li>
+              <li>2000s: Rise of Big Data
+                Explosion of data from the internet, mobile devices, and sensors fuels demand for advanced AI techniques like deep learning.
+
+
+            </li>
+        </ul>
+        <center>
+            <button id="continueBtn1" class="btn btn-primary mt-3">Continue ↓</button>
+        </center>
+        </div></div>
+        </div>
+
+
+
+        <!-- Expandable List (Initially Hidden) -->
+
+
+         <br>
+        <div id="listSection" class="hidden">
+            <div id="topic2Content" class="hidden">
+            <h3 class="mt-3">Title</h3>
+            <ul class="list-group">
+               <i> <b><li class="list-group-item" onclick="toggleDetails(1)">AI in Data Science
+                    <span>➕</span></li></b></i>
+                <div id="details1" class="hidden ps-4"><b><p>What is AI in Data Science?
+                </p></b>
+                <br>   <p>AI in Data Science is the use of artificial intelligence techniques to automate, enhance, and accelerate the process of extracting insights from data. It helps data scientists in analyzing large datasets, making accurate predictions, and building intelligent systems that can learn and improve over time.
+
+                </p>
+                   <br><b><p>Key Features of AI in Data Science:
+                </p></b>
+                    <ul>
+                        <li>Automates repetitive tasks like data cleaning and preparation.
+
+
+
+                        </li>
+                        <li>Improves prediction accuracy with machine learning models.
+
+
+
+                        </li>
+                        <li>Identifies hidden patterns and insights beyond human capability.
+
+
+
+                        </li>                            
+                        <li>Enhances decision-making through intelligent recommendations.
+
+
+
+                        </li>
+                    </ul><br>
+
+                    <b><p>Common AI Techniques Used:</p></b>
+                    <ul>
+                        <li>Machine Learning – Builds models to predict outcomes from data.
+
+
+
+                        </li>
+                        <li> Deep Learning – Uses neural networks for complex tasks like image recognition and natural language processing.
+
+
+
+                        </li>
+                        <li> Natural Language Processing (NLP) – Helps computers understand human language.
+
+
+
+                        </li>
+                        <li> Computer Vision – Enables machines to interpret visual information.
+
+
+
+                        </li>
+                        <li>Reinforcement Learning – Trains models to make decisions through rewards and penalties.
+
+
+
+                        </li>
+                    </ul>
+                      
+                    </div>
+               
+                    
+               <i><b><li class="list-group-item" onclick="toggleDetails(2)"> Interactive AI Applications <span>➕</span></li></b></i>
+                <div id="details2" class="hidden ps-4">
+                    <b><p>
+                        What are Interactive AI Applications?
+
+                    </p></b>
+                    <p>These are AI-driven systems that interact dynamically with users, adapt based on input, and provide real-time intelligent responses or predictions.
+
+
+
+                    </p>
+                    <b><p>Key Features:</p></b>
+                     <ul>
+                         <li> Personalizes user experiences (e.g., recommendation systems).
+
+
+
+                         </li>
+                         <li>Continuously learns from user behavior and feedback.
+
+
+
+                         </li>
+                         <li>Enables natural conversations with AI (e.g., chatbots, virtual assistants).
+
+
+
+                         </li>                            
+                     </ul>
+                     <br><b><p> Common Types :</p></b>
+                     <ul>
+                         <li>Recommendation Engines
+
+
+
+                         </li>
+                         <li> Conversational AI (Chatbots, Voice Assistants)
+
+
+
+                         </li>
+                         <li>Dynamic Pricing Systems
+
+
+
+                         </li>   
+                         <li>Autonomous Vehicles (Self-learning navigation)
+
+
+
+                         </li>                      
+                     </ul>
+                </div>
+
+
+              <i><b> <li class="list-group-item" onclick="toggleDetails(3)">AI Tools and Libraries in Data Science 
+
+                    <span>➕</span></li></i></b>
+                <div id="details3" class="hidden ps-4">
+                    <b><p>What are AI Tools and Libraries?
+
+                    </p></b>
+                    <p>AI tools and libraries are pre-built software packages, frameworks, and platforms that help data scientists efficiently build, train, and deploy AI models for various data-driven tasks.
+
+
+
+                    </p>
+                    <b><p>Key Features :</p></b>
+                     <ul>
+                         <li> Simplify complex AI and machine learning processes.
+ </li>
+                         <li>Provide reusable code, pre-trained models, and algorithms. </li>
+                         <li>Speed up model development and deployment.</li>                          
+                     </ul> <br>                 
+                     <b><p>Common Types : </p></b>
+                     <ul>
+                         <li>Computer Vision (e.g., Image recognition, Object detection)
+
+                         </li>
+                         <li> AI-driven Analytics Tool (e.g., Automated data cleaning, pattern recognition)
+                            
+
+                         </li>
+                         <li> Recommendation System(e.g., Product recommendations on e-commerce sites)
+                        </li>
+                                                 
+                     </ul>
+                </div>
+            </ul>
+            <center>
+                <button id="continueBtn2" class="btn btn-primary mt-3">Continue ↓</button>
+            </center>
+        </div>
+        </div>
+
+        <!-- Continue Button -->
+        <div id="topic3Content" class="hidden">
+            <h2 class="text-center">Topic 3: Understanding UI Components</h2>
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../ppt/AI in Data Science_page-0001.jpg" class="d-block w-100" alt="UI Element 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/AI in Data Science_page-0002.jpg" class="d-block w-100" alt="UI Element 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/AI in Data Science_page-0003.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/AI in Data Science_page-0004.jpg" class="d-block w-100" alt="UI Element 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/AI in Data Science_page-0005.jpg" class="d-block w-100" alt="UI Element 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/AI in Data Science_page-0006.jpg" class="d-block w-100" alt="UI Element 6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/AI in Data Science_page-0007.jpg" class="d-block w-100" alt="UI Element 7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/AI in Data Science_page-0008.jpg" class="d-block w-100" alt="UI Element 8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/AI in Data Science_page-0009.jpg" class="d-block w-100" alt="UI Element 9">
+                    </div>
+                   
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev" style="color: black;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next" style="color: black;">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+                </button>
+            </div>
+            <p class="text-center mt-3">Swipe through the images to learn more.</p>
+             <!-- Continue Button -->
+        <center>
+            <button id="continueBtn3" class="btn btn-primary mt-3">Continue ↓</button>
+        </center>
+        </div>
+
+       
+        <!-- Topic 4 Content (Initially Hidden) -->
+<div id="topic4Content" class="hidden">
+    <h2 class="text-center">Topic 4: Interactive Learning</h2>
+    
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <!-- Flip Card 1 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image/ai image.jpeg" alt="Image 1">
+                </div>
+                <div class="flip-card-back">
+                    <p><b> AI Simulation and What-If Tools
+                    </b></p>
+                    <p>Simulation tools allow users to modify input variables to see how AI predictions change.
+
+                    </p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Flip Card 2 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image/ai2.jpeg" alt="Image 2">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>Interactive Visual Analytics
+
+                    </b></p>
+                    <p>Combines AI and data visualization where users explore predictions, clusters, and recommendations visually through charts, maps, and plots — enhancing understanding.
+
+                    </p>
+                       </div>
+            </div>
+        </div>
+
+        <!-- Flip Card 3 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image/ai4.jpg" alt="Image 3">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>AI Chatbots and Virtual Assistants
+                    </b></p>
+                    <p>Conversational interfaces powered by AI that interact with users in real-time, answering questions, assisting tasks, and learning from ongoing interactions.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Flip Card 4-->
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image/ai5.jpeg" alt="Image 3">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>Interactive Machine Learning (IML)
+                    </b></p>
+                    <p>It makes the model smarter with continuous user interaction.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <button id="continueBtn4" class="btn btn-primary mt-4">Continue ↓</button>
+    </center>
+</div>
+
+    </div>
+</div>
+
+<script src="web1.js">
+
+    
+</script>
+<script>
+       
+    document.getElementById('continueBtn4').addEventListener('click', function() {
+        window.location.href = '../ai_quiz.php'; // Redirect to the quiz page
+    });
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

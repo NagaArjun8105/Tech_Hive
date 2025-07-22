@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Module</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="web1.css">
+</head>
+<body>
+
+<div class="d-flex">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h5> CyberSecurity</h5>
+        <a id="topic1" class="active">Topic 1</a>
+        <a id="topic2">Topic 2</a>
+        <a id="topic3">Topic 3</a>
+        <a id="topic4">Topic 4</a>
+        <a href="#">Knowledge Test</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content flex-grow-1">
+        <div id="topic1Content">
+        <div id="container">
+        <!-- Video Section -->
+        <div id="videoSection" class="video-container">
+            <video src="videoplayback (1).mp4" controls="" width: "100%" height: "300px" poster="html.jpg"></video>
+            
+        </div>
+        <div class="intro">
+        <h2>Introduction to Machine Learning 🌟
+
+
+        </h2><br>
+        <h4>What is Machine Learning?
+
+        </h4>
+        <p>Machine Learning (ML) is a branch of artificial intelligence that focuses on building systems that can learn from and make decisions based on data, without being explicitly programmed.
+
+
+
+        </p>
+        <br><h4>📚 Types of Machine Learning
+
+
+        </h4>
+        <ul>
+            <li><p><b>1. 🎯 Supervised Learning
+            </b>
+
+             The model learns from labeled data — input/output pairs are given.
+
+             Examples:
+
+                    Classification (e.g., spam detection, disease prediction)
+
+                    Regression (e.g., house price prediction)
+
+
+
+ </p></li>
+            <li><p><b>2. 🔍 Unsupervised Learning
+
+
+            </b>
+
+            The model finds hidden patterns or groupings in data without labels.
+            Examples:
+
+                   Clustering (e.g., customer segmentation)
+
+                   Association (e.g., market basket analysis)
+
+
+
+        </p></li>
+            <li><p>
+               <b> 3. 🎮 Reinforcement Learning
+
+
+               </b>
+                The model learns by interacting with an environment, receiving rewards or penalties.
+
+                Examples:
+
+                        Game-playing AI (e.g., AlphaGo)
+
+                         Robotics (e.g., robot navigation)
+
+            </p> </li>
+        </ul><br>
+        <h4>🌟 The Evolution of Machine Learning
+
+
+        </h4>
+        <ul>
+            <li>1950s – Early Concepts: Alan Turing proposes the idea of machines that can "think" (Turing Test).
+</li>
+             <li>1960s – Pattern Recognition: Focus shifts to basic pattern recognition tasks, like simple speech recognition and early neural networks (Perceptron).
+
+
+</li>
+              <li>1990s – Practical Applications Begin: ML algorithms start being applied to real-world tasks like handwriting recognition, email filtering, and early recommendation systems (like Amazon's suggestions).
+
+
+</li>
+        </ul>
+        <center>
+            <button id="continueBtn1" class="btn btn-primary mt-3">Continue ↓</button>
+        </center>
+        </div></div>
+        </div>
+
+
+
+        <!-- Expandable List (Initially Hidden) -->
+        <div id="listSection" class="hidden">
+            <div id="topic2Content" class="hidden">
+            <h3 class="mt-3">Title</h3>
+            <ul class="list-group">
+              <i><b><li class="list-group-item" onclick="toggleDetails(1)">Machine Learning 
+
+
+
+                    <span>➕</span></li></b></i>
+                <div id="details1" class="hidden ps-4"><b><p>What is Machine Learning ?
+
+                </p></b>
+                   <p> Machine Learning (ML) is a subset of artificial intelligence (AI) that enables systems to automatically learn and improve from experience without being explicitly programmed.
+
+
+
+
+                   </p>
+                   <b><p>Key Features of Machine Learning:
+
+
+                   </p></b>
+                    <ul>
+                        <li>Automates analytical model building and improves with more data.
+
+</li>
+                        <li>Identifies hidden patterns in large and complex datasets.
+
+</li>
+                        <li>Continuously adapts and refines models over time.
+</li>                            
+                        <li>Enables predictive analytics and intelligent decision-making.
+</li>
+                    </ul>
+                    <b><p>Common Machine Learning Types:
+
+
+
+                    </p></b>
+                    <ul>
+                        <li>Supervised Learning – Learns from labeled data to predict outcomes (e.g., classification, regression).
+
+ </li>
+                        <li> Unsupervised Learning – Discovers hidden structures in unlabeled data (e.g., clustering, association).
+
+</li>
+                        <li> Reinforcement Learning – Learns optimal actions through rewards and punishments by interacting with an environment.
+ </li>
+                    </ul>
+                      
+                    </div>
+               
+                    
+              <i><b> <li class="list-group-item" onclick="toggleDetails(2)">Interactive Machine Learning 
+
+
+                    <span>➕</span></li></b></i>
+                <div id="details2" class="hidden ps-4">
+                    <b><p>What is Interactive Machine Learning ?
+
+
+                    </p></b>
+                    <p>Interactive Machine Learning (IML) involves human-in-the-loop systems where users actively participate in the training process to refine and improve models continuously.
+ </p>
+                    <b><p>Key Features Interactive Machine Learning
+
+</p></b>
+                     <ul>
+                         <li>Automatically learn and adjust based on input data.
+
+
+
+</li>
+                         <li>Handle structured (tables) and unstructured (images, text) data.</li>
+
+ <li> Improve accuracy and performance over time with more training.</li>                           
+                     </ul>
+                     <b><p>Common Types of Interactive Machine Learning 
+ </p></b>
+                     <ul>
+                         <li>Active Learning :
+
+                               The model actively queries the user (or an oracle) to label the most informative data points.
+ </li>
+                         <li> Human-in-the-Loop Learning :
+                           
+                               Users directly assist in training by validating, correcting, or labeling outputs during the learning process.</li>
+<li>
+                            Incremental Learning :
+                                
+                            Models update continuously with new user feedback or incoming data without needing a full retraining.
+
+
+
+
+</li>
+
+
+                         </li>
+                                                
+                     </ul>
+                </div>
+
+                <i><b><li class="list-group-item" onclick="toggleDetails(3)">🧠 Self-Supervised Learning
+
+
+
+
+
+                    <span>➕</span></li></b></i>
+                <div id="details3" class="hidden ps-4">
+                    <b><p>What is Self-Supervised Learning ?
+
+
+
+                    </p></b>
+                    <p>Self-Supervised Learning is a type of machine learning where the system automatically generates labels from the input data itself, removing the need for manual labeling.
+</p>
+                    <b><p>key Features of Self-Supervised Learning?
+
+ </p></b>
+                     <ul>
+                         <li> No manual labeling required — data labels are created automatically.
+</li>
+                         <li>Learns useful representations from large amounts of unlabeled data.
+</li>
+                         <li>Commonly used in fields like Natural Language Processing (NLP) and Computer Vision.
+
+                         </li>                            
+                         <li>
+                            Helps pre-train models that can later be fine-tuned for specific tasks.
+
+                        </li>
+                     </ul>                  
+                     <b><p>Common Types of Self-Supervised Learning
+                    </p></b>
+                     <ul>
+                         <li>1. Contrastive Learning : This technique learns by comparing positive and negative examples. The model tries to learn representations by pulling similar examples closer in the feature space and pushing dissimilar examples farther apart.
+
+
+</li>
+                         <li> 2. Predictive Learning (Context Prediction) :  In this approach, the model predicts missing parts of the input based on context or other parts of the data. This type of learning often works with sequential data.
+
+
+                        </li>
+                         <li>3. Generative Modeling : The model learns to generate new data samples that resemble the input data distribution. It learns patterns in the data and can create new instances that are similar to the training set.
+
+
+</li>                         
+                     </ul>
+                </div>
+            </ul>
+            <center>
+                <button id="continueBtn2" class="btn btn-primary mt-3">Continue ↓</button>
+            </center>
+        </div>
+        </div>
+
+        <!-- Continue Button -->
+        <div id="topic3Content" class="hidden">
+            <h2 class="text-center">Topic 3: Understanding UI Components</h2>
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="html.jpg" class="d-block w-100" alt="UI Element 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="html.jpg" class="d-block w-100" alt="UI Element 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="html.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+            <p class="text-center mt-3">Swipe through the images to learn more.</p>
+             <!-- Continue Button -->
+        <center>
+            <button id="continueBtn3" class="btn btn-primary mt-3">Continue ↓</button>
+        </center>
+        </div>
+
+       
+        <!-- Topic 4 Content (Initially Hidden) -->
+<div id="topic4Content" class="hidden">
+    <h2 class="text-center">Topic 4: Interactive Learning</h2>
+    
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <!-- Flip Card 1 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="htmlflip.jpg" alt="Image 1">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>  Active Learning
+
+</b></p>
+                    <p>Uncertainty Sampling
+
+                        Query-by-Committee
+                        
+                        Expected Model Change</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Flip Card 2 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="cssflip.png" alt="Image 2">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>Reinforcement Learning (RL)
+
+ </b></p>
+                    <p> Basics of RL (Agent, Environment, Reward)
+
+                        Exploration vs Exploitation
+                        
+                        Policy Learning and Value Learning
+                        
+                        
+
+
+</p>
+                       </div>
+            </div>
+        </div>
+
+        <!-- Flip Card 3 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="jsflip.png" alt="Image 3">
+                </div>
+                <div class="flip-card-back">
+                    <p><b> Reinforcement Learning (RL)
+
+
+
+                    </b></p>
+                    <p> Basics of RL (Agent, Environment, Reward)
+
+                        Exploration vs Exploitation
+                        
+                        Policy Learning and Value Learning
+                        
+                        
+
+
+</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Flip Card 4-->
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="nodeflip2.jpg" alt="Image 3">
+                </div>
+                <div class="flip-card-back">
+                    <p><b> Human-in-the-Loop (HITL) Systems
+
+</b></p>
+                    <p>Role of humans in training models
+
+                        Feedback mechanisms
+                        
+                        Correction and supervision strategies
+
+
+
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <button id="continueBtn4" class="btn btn-primary mt-4">Continue ↓</button>
+    </center>
+</div>
+
+    </div>
+</div>
+
+<script src="web1.js">
+
+    
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<?php
+session_start();
+?>
+<!-- Course Details Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details | E-Learning Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .course-header {
+            background: linear-gradient(to right, #007bff, #6610f2);
+            color: white;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">E-Learn Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="course-header text-center">
+        <h1>Machine Learning</h1>
+        <p>Learn the fundamentals of machine learning with hands-on projects!</p>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3>Course Overview</h3>
+                <p>This course covers the basics of machine learning algorithms and model building...</p>
+                <h4>Minimal Notes:</h4>
+                <ul>
+                    <li><strong>Supervised Learning:</strong> Techniques like Linear Regression, Logistic Regression, and Decision Trees
+                    </li>
+                    <li><strong>Unsupervised Learning:</strong> Clustering methods like K-Means and Hierarchical Clustering.
+                    </li>
+                    <li><strong>Neural Networks:</strong> Basics of Artificial Neural Networks and Deep Learning</li>
+                    <li><strong>Scikit-learn: </strong> Popular Python library for building machine learning models.
+                 </li>
+                    <li><strong>Pandas & NumPy:</strong> Data manipulation and mathematical operations.</li>
+                    <li><strong>Matplotlib & Seaborn:</strong> Data visualization techniques.</li>
+                    <li><strong>Model Evaluation:</strong>  Accuracy, Precision, Recall, and Confusion Matrix.
+                        </li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <div class="card p-3">
+                    <h4>Course Info</h4>
+                    <ul>
+                        <li>Duration: 8 weeks</li>
+                    <li>Instructor: John Doe</li>
+                        <li>Level: Beginner to Advanced</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container mt-5">
+        <h3>Other Courses</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Python</h5>
+                        <p>Learn data analysis, machine learning, and visualization.</p>
+                        <a href="python.html" class="btn btn-info">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Cyber Security Basics</h5>
+                        <p>Understand security principles, encryption, and ethical hacking.</p>
+                        <a href="cyber security.html" class="btn btn-info">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Cloud Computing with AWS</h5>
+                        <p>Learn cloud services, deployment, and scaling on AWS.</p>
+                        <a href="cloud computing.tml.html" class="btn btn-info">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const userEmail = "<?php echo $_SESSION['user_email']; ?>";
+        const enrollBtn = document.querySelector(".btn-primary");
+    
+        enrollBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+    
+            if (!userEmail) {
+                alert("Please log in to enroll in this course.");
+                return;
+            }
+    
+            fetch("check_completion.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ email: userEmail, course: "mlscore" })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.completed) {
+                    alert("You have already completed this course.");
+                } else {
+                    window.location.href = "modules/machine learning.html";
+                }
+            })
+            .catch(err => {
+                alert("Error checking course status.");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Module</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="web1.css">
+    <style>
+            .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+.carousel-inner img {
+    width: 100%;
+    height: 600px; /* Adjust as needed */
+    object-fit: cover;
+}
+.carousel-inner img {
+    max-height: 70vh; /* 70% of viewport height */
+    width: auto;
+    object-fit: contain;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="d-flex">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h5> Cloud computing</h5>
+        <a id="topic1" class="active">Topic 1</a>
+        <a id="topic2">Topic 2</a>
+        <a id="topic3">Topic 3</a>
+        <a id="topic4">Topic 4</a>
+        <a href="#">Knowledge Test</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content flex-grow-1">
+        <div id="topic1Content">
+        <div id="container">
+        <!-- Video Section -->
+        <div id="videoSection" class="video-container">
+            <video src="image/aws.mp4" controls="" width: "100%" height: "300px" poster="image/poster1 (2).jpeg"></video>
+            
+        </div>
+        <div class="intro">
+        <h2>☁️ Introduction to Cloud Computing
+
+        </h2><br>
+        <h4>What is Cloud Computing?
+        </h4>
+        <p>Cloud Computing is the delivery of computing services—like servers, storage, databases, networking, software—over the internet ("the cloud") to offer faster innovation, flexible resources, and economies of scale.
+
+
+        </p>
+        <br><h4>🛠️ Types of Cloud Computing
+
+        </h4>
+        <ul>
+            <li><p><b>1. Public Cloud</b>
+
+                Services are delivered over the public internet.
+
+                Examples: Amazon Web Services (AWS), Microsoft Azure, Google Cloud.
+
+ </p></li>
+            <li><p><b>2. Private Cloud
+
+            </b>
+
+            Services are maintained on a private network.
+
+            Offers better security and control.
+
+        </p></li>
+            <li><p>
+               <b> 3. Hybrid Cloud
+
+               </b>
+               Combines public and private clouds.
+
+               Allows data and applications to be shared between them for flexibility.
+
+            </p> </li>
+        </ul><br>
+        <h4>📈 Evolution of Cloud Computing
+
+        </h4>
+        <ul>
+            <li>1960s – Early Concepts: Mainframe computing with terminal access hints at the idea of shared resources.
+
+            </li>
+             <li>1990s – Rise of the Internet: Internet growth sets the foundation for cloud services.
+</li>
+              <li>2000s – Birth of Modern Cloud: Amazon launched AWS (Amazon Web Services) in 2006, offering storage and computing power.
+</li>
+        </ul>
+        <center>
+            <button id="continueBtn1" class="btn btn-primary mt-3">Continue ↓</button>
+        </center>
+        </div></div>
+        </div>
+
+
+
+        <!-- Expandable List (Initially Hidden) -->
+        <div id="listSection" class="hidden">
+            <div id="topic2Content" class="hidden">
+            <h3 class="mt-3">Title</h3>
+            <ul class="list-group">
+              <i><b><li class="list-group-item" onclick="toggleDetails(1)">☁️ Cloud Computing
+
+
+                    <span>➕</span></li></b></i>
+                <div id="details1" class="hidden ps-4"><b><p>What is Cloud Computing?
+                </p></b>
+                   <p> Cloud computing delivers computing services like servers, storage, databases, networking, software over the internet ("the cloud") to offer faster innovation and flexible resources.
+
+
+
+                   </p>
+                   <b><p>Key Features of Cloud Computing
+
+                   </p></b>
+                    <ul>
+                        <li>On-demand self-service (access services anytime).
+
+
+
+                        </li>
+                        <li>Broad network access (available across devices).
+
+
+
+                        </li>
+                        <li>Resource pooling (shared resources for multiple customers).
+
+
+
+                        </li>                            
+                        <li>Rapid elasticity (scale resources up or down quickly).
+
+
+
+                        </li>
+                    </ul>
+                    <b><p>Common Types of Cloud Services
+
+
+                    </p></b>
+                    <ul>
+                        <li>IaaS (Infrastructure as a Service) — Provides virtual servers, storage, and networking.
+
+
+
+                        </li>
+                        <li> PaaS (Platform as a Service) — Offers platforms to develop, run, and manage applications.
+
+
+
+                        </li>
+                        <li> SaaS (Software as a Service) — Delivers software applications over the internet.
+
+
+
+                        </li>
+                    </ul>
+                      
+                    </div>
+               
+                    
+              <i><b> <li class="list-group-item" onclick="toggleDetails(2)">☁️ Public Cloud
+
+                    <span>➕</span></li></b></i>
+                <div id="details2" class="hidden ps-4">
+                    <b><p>What is Public Cloud?
+
+                    </p></b>
+                    <p>A cloud environment owned and operated by third-party providers, offering services over the public internet.
+                        (Example: AWS, Microsoft Azure)
+                        
+                        
+
+                    </p>
+                    <b><p>Key Features of Public Cloud
+
+
+                    </p></b>
+                     <ul>
+                         <li>Available to the general public.
+
+
+
+                         </li>
+                         <li>Cost-effective, as it operates on a pay-per-use model.
+
+                         <li> Highly scalable with resources pooled and shared among different organizations.</li>                           
+                     </ul>
+                     <b><p>Common Types of public cloud 
+                    </p></b>
+                     <ul>
+                         <li>Providers: Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP)
+
+
+
+                         </li>
+                         <li> Provides virtualized computing resources (like virtual machines, storage, etc.) over the internet.</li>
+
+
+
+                         </li>
+                                                
+                     </ul>
+                </div>
+
+                <i><b><li class="list-group-item" onclick="toggleDetails(3)">☁️ Private Cloud
+
+
+
+
+                    <span>➕</span></li></b></i>
+                <div id="details3" class="hidden ps-4">
+                    <b><p>What is Private Cloud?
+
+
+                    </p></b>
+                    <p>A cloud infrastructure used exclusively by one organization, providing greater control and security.
+
+                    </p>
+                    <b><p>key Features of Private cloud
+
+
+
+
+                    </p></b>
+                     <ul>
+                         <li> The organization owns and operates the infrastructure in their data center.
+
+                         </li>
+                         <li>The organization hosts the infrastructure in a third-party data center, but the cloud is dedicated to that organization.
+
+                         </li>
+                         <li>A private cloud that is hosted in a public cloud environment but has isolated network configurations.
+
+
+
+                         </li>                            
+                         <li>Example Providers: IBM Cloud Private, Microsoft Azure Stack, VMware Cloud on AWS
+
+
+
+                         </li>
+                     </ul>                  
+                     <b><p>Common Types of Private Cloud</p></b>
+                     <ul>
+                         <li>1. On-Premises Private Cloud:
+                            Total control over data and infrastructure.
+
+                            Requires significant investment in hardware and maintenance.
+
+                            Provides the highest level of security and customization.
+</li>
+                         <li> The infrastructure is dedicated to a single organization but managed externally.</li>
+                         <li>Less maintenance burden for the organization compared to on-premises clouds.
+</li>                         
+                     </ul>
+                </div>
+            </ul>
+            <center>
+                <button id="continueBtn2" class="btn btn-primary mt-3">Continue ↓</button>
+            </center>
+        </div>
+        </div>
+
+        <!-- Continue Button -->
+        <div id="topic3Content" class="hidden">
+            <h2 class="text-center">Topic 3: Understanding UI Components</h2>
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../ppt/Slide1.jpg" class="d-block w-100" alt="UI Element 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/Slide2.jpg" class="d-block w-100" alt="UI Element 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/Slide3.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/Slide4.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/Slide5.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/Slide6.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/Slide7.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/Slide8.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/Slide10.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+            <p class="text-center mt-3">Swipe through the images to learn more.</p>
+             <!-- Continue Button -->
+        <center>
+            <button id="continueBtn3" class="btn btn-primary mt-3">Continue ↓</button>
+        </center>
+        </div>
+
+       
+        <!-- Topic 4 Content (Initially Hidden) -->
+<div id="topic4Content" class="hidden">
+    <h2 class="text-center">Topic 4: Interactive Learning</h2>
+    
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <!-- Flip Card 1 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image/aws1.jpg" alt="Image 1">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>1. Infrastructure as a Service (IaaS)
+
+
+                    </b></p>
+                    <p>Provides virtualized computing resources over the internet.
+
+
+
+                    </p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Flip Card 2 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image/aws3.png" alt="Image 2">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>2. Platform as a Service (PaaS)
+
+
+                    </b></p>
+                    <p>Provides hardware and software tools over the internet.
+
+
+</p>
+                       </div>
+            </div>
+        </div>
+
+        <!-- Flip Card 3 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image/aws2.jpg" alt="Image 3">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>3. Software as a Service (SaaS)
+
+
+                    </b></p>
+                    <p> Delivers software applications over the internet.
+
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Flip Card 4-->
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image/aws5.jpg" alt="Image 3">
+                </div>
+                <div class="flip-card-back">
+                    <p><b> FaaS (Function as a Service)
+
+                    </b></p>
+                    <p> FaaS is a cloud computing service that allows developers to run individual functions or pieces of code in response to events, without managing servers.
+
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <button id="continueBtn4" class="btn btn-primary mt-4">Continue ↓</button>
+    </center>
+</div>
+
+    </div>
+</div>
+
+<script src="web1.js">
+
+    
+</script>
+<script>
+    document.getElementById('continueBtn4').addEventListener('click', function() {
+        window.location.href = '../cc_quiz.php'; // Navigate to Cloud Computing quiz
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

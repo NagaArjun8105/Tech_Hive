@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Module</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="web1.css">
+    <style>
+       
+        .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+.carousel-inner img {
+    width: 100%;
+    height: 600px; /* Adjust as needed */
+    object-fit: cover;
+}
+.carousel-inner img {
+    max-height: 70vh; /* 70% of viewport height */
+    width: auto;
+    object-fit: contain;
+}
+
+    </style>
+</head>
+
+<body>
+
+<div class="d-flex">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h5> Data Visualization</h5>
+        <a id="topic1" class="active">Topic 1</a>
+        <a id="topic2">Topic 2</a>
+        <a id="topic3">Topic 3</a>
+        <a id="topic4">Topic 4</a>
+        <a href="#">Knowledge Test</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content flex-grow-1">
+        <div id="topic1Content">
+        <div id="container">
+        <!-- Video Section -->
+        <div id="videoSection" class="video-container">
+            <video src="image/dv.mp4" controls="" width: "100%" height: "300px" poster="image/poster1 (3).jpeg"></video>
+            
+        </div>
+        <div class="intro">
+        <h2>Introduction to Data Visualization 🌐</h2><br>
+        <h4>What is Data Visualization ?</h4>
+        <p>Data visualization is the graphical representation of information and data.The main goal is to make data easier to see, understand, and use—especially when identifying patterns, trends, or outliers.</p>
+        <br><h4>💻Types of Data Visualization</h4>
+        <ul>
+            <b>1.</b> 📊 Charts
+               <li>  Bar Chart – Compares quantities across categories.</li>
+                
+            
+                <li> Line Chart – Shows trends over time.</li>
+                
+                <li> Pie Chart – Displays parts of a whole (percentages).</li>
+                
+                <li> Area Chart – Like a line chart but filled in, useful for showing cumulative totals.</li>
+                <b>2.</b> 📈 Graphs
+                    <li>1. Scatter Plot – Shows the relationship between two variables.</li>
+                    
+                    <li>2. Chart – Like a scatter plot but with a third variable represented by bubble size.</li>
+                    
+                   <li>3. Histogram – Shows the distribution of a dataset.</li>
+                    
+                    <li>4. Box Plot (Box-and-Whisker) – Summarizes data using medians, quartiles, and outliers.</li>
+                    
+                    </li>
+              <b>3.</b>🗺️ Maps
+    <li> Choropleth Map – Uses colors or patterns to show data across geographic areas.</li>
+    
+   <li> Heat Map – Shows intensity of data using color in a two-dimensional space.</li>
+    
+    <li> Dot Map – Uses dots to show frequency or location of a variable.</li>
+        </ul><br>
+        <h4>🌍The Evolution of Data Visualization</h4>
+        <ul>
+            <li>20th Century: Statistical visualization grows alongside advances in science, economics, and industry.
+
+            </li>
+             <li>2010s – Present
+                Big Data: Huge data sets require smarter visuals. AI and machine learning help spot trends.
+                
+                Real-time Dashboards: Used in finance, marketing, logistics, and more.
+                
+                Augmented Reality / VR Visualizations: In development for 3D, immersive data experiences.
+                
+                </li>
+              <li>Modern Web (2010s - Present) – Responsive, API-driven, and cloud-based applications using React, Node.js, and AI-powered tools</li>
+        </ul>
+        <center>
+            <button id="continueBtn1" class="btn btn-primary mt-3">Continue ↓</button>
+        </center>
+        </div></div>
+        </div>
+
+
+
+        <!-- Expandable List (Initially Hidden) -->
+
+
+         <br>
+        <div id="listSection" class="hidden">
+            <div id="topic2Content" class="hidden">
+            <h3 class="mt-3">Title</h3>
+            <ul class="list-group">
+                <b><li class="list-group-item" onclick="toggleDetails(1)">Data Visualization <span>➕</span></li></b>
+                <div id="details1" class="hidden ps-4"><b><p>What is Data Visualization ?</p></b></li>
+                <br>   <p>Data Visualization is the practice of converting raw data into visual formats like charts, graphs, maps, and infographics. It allows people to explore data visually, making it easier to understand trends, patterns, and insights at a glance..</p>
+                   <br><b><p>Key Features of Data Visualization:</p></b>
+                    <ul>
+                        <li>Simplifies complex data for quick understanding.
+
+                        </li>
+                        <li>Identifies patterns and trends that are hard to detect in text or tables.
+
+                        </li>
+                        <li>Enhances storytelling with data, making it more engaging and persuasive.
+
+                        </li>                            
+                        <li>Supports decision-making by revealing actionable insights.
+
+                        </li>
+                    </ul>,<br>
+
+                    <b><p>Common Visualization Types:
+                        :</p></b>
+                    <ul>
+                        <li>Heat Map – Shows data density or intensity using color.
+
+                        </li>
+                        <li> Histogram – Displays frequency distribution.
+
+                        </li>
+                        <li> Scatter Plot – Reveals correlation between two variables.
+
+                        </li>
+                        <li> Dashboards – Combine multiple visualizations for real-time insights.
+
+                        </li>
+                        <li>Tree Map – Visualizes hierarchical data with nested rectangles.
+
+                        </li>
+                    </ul>
+                      
+                    </div>
+               
+                    
+               <i><b><li class="list-group-item" onclick="toggleDetails(2)"> Interactive Visualizations<span>➕</span></li></b></i>
+                <div id="details2" class="hidden ps-4">
+                    <b><p>What is  Interactive Visualizations ?</p></b>
+                    <p>These are dynamic and user-engaging data visualizations often found in dashboards or web applications.
+
+                    </p>
+                    <b><p>Key Features:</p></b>
+                     <ul>
+                         <li> Users can zoom, filter, click, and hover for details.
+
+                         </li>
+                         <li>Helps in exploring data from different perspectives.
+
+                         </li>
+                         <li>Often built with tools like D3.js, Tableau, Power BI, or Plotly.
+
+                         </li>                            
+                     </ul>
+                     <br><b><p> Common Types :</p></b>
+                     <ul>
+                         <li>Interactive dashboards
+
+                         </li>
+                         <li> Drill-down charts
+
+                         </li>
+                         <li>Time sliders and filters
+
+                         </li>   
+                         <li>Tooltips and hover data
+
+                         </li>                      
+                     </ul>
+                </div>
+
+
+              <i><b> <li class="list-group-item" onclick="toggleDetails(3)"> Geospatial Visualization (Maps)
+                    <span>➕</span></li></i></b>
+                <div id="details3" class="hidden ps-4">
+                    <b><p>What is Geospatial Visualization (Maps) ?
+                    </p></b>
+                    <p>Used to represent data linked to geographical locations.
+
+                    </p>
+                    <b><p>Key Features :</p></b>
+                     <ul>
+                         <li> Combines maps with data points
+
+                         </li>
+                         <li>Useful for location-based insights
+
+                         </li>
+                         <li>Requires latitude and longitude or shapefiles
+
+                         </li>                          
+                     </ul> <br>                 
+                     <b><p>Common Types : </p></b>
+                     <ul>
+                         <li>Choropleth Maps: Color-coded maps showing density or magnitude.
+
+                         </li>
+                         <li> Symbol Maps: Use symbols like circles to show values at locations.
+
+                         </li>
+                         <li> Heat Maps (Geospatial): Show intensity of activity or value over a region.
+
+                         </li>
+                                                 
+                     </ul>
+                </div>
+            </ul>
+            <center>
+                <button id="continueBtn2" class="btn btn-primary mt-3">Continue ↓</button>
+            </center>
+        </div>
+        </div>
+
+        <!-- Continue Button -->
+        <div id="topic3Content" class="hidden">
+            <h2 class="text-center">Topic 3: Understanding UI Components</h2>
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../ppt/dv1.jpg"d-block w-100" alt="UI Element 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/dv2.jpg" class="d-block w-100" alt="UI Element 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/dv3.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/dv4.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/dv5.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/dv6.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../ppt/dv7.jpg" class="d-block w-100" alt="UI Element 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+            <p class="text-center mt-3">Swipe through the images to learn more.</p>
+             <!-- Continue Button -->
+        <center>
+            <button id="continueBtn3" class="btn btn-primary mt-3">Continue ↓</button>
+        </center>
+        </div>
+
+      
+        <!-- Topic 4 Content (Initially Hidden) -->
+<div id="topic4Content" class="hidden">
+    <h2 class="text-center">Topic 4: Interactive Learning</h2>
+    
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <!-- Flip Card 1 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image\vi1.jpeg" alt="Image 1">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>Infographics</b></p>
+                    <p>Visual storytelling tools that mix data with design, often used in media and marketing.
+                    </p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Flip Card 2 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image\vi2.jpeg" alt="Image 2">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>Time Series Visualization
+                    </b></p>
+                    <p>Specialized visualizations for data that changes over time.</p>
+                       </div>
+            </div>
+        </div>
+
+        <!-- Flip Card 3 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image\vi3.jpeg" alt="Image 3">
+                </div>
+                <div class="flip-card-back">
+                    <p><b>Network Diagrams</b></p>
+                    <p>Visualize relationships between entities.</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Flip Card 4-->
+         <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="image\vi4.jpeg" alt="Image 3">
+                </div>
+                <div class="flip-card-back">
+                    <p><b> Multivariate Data Visualization</b></p>
+                    <p>Visualizing data with more than two variables.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <button id="continueBtn4" class="btn btn-primary mt-4">Continue ↓</button>
+    </center>
+</div>
+
+    </div>
+</div>
+
+
+<script src="web1.js">
+
+    
+</script>
+<script>
+       
+document.getElementById('continueBtn4').addEventListener('click', function() {
+    window.location.href = '../dv_quiz.php'; // Redirect to the quiz page
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
